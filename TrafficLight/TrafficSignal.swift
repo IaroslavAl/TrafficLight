@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TrafficSignal: View, Hashable {
+struct TrafficSignal: View {
     let color: Color
     var opacity = 0.3
     
