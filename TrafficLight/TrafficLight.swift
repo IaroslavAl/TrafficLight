@@ -21,7 +21,7 @@ struct TrafficLight: View {
             VStack {
                 redSignal.opacity(currentSignal == .red ? 1.0 : 0.3)
                 yellowSignal.opacity(currentSignal == .yellow ? 1.0 : 0.3)
-                    .padding()
+                    .padding(8)
                 greenSignal.opacity(currentSignal == .green ? 1.0 : 0.3)
                 
                 Spacer()

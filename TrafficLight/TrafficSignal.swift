@@ -13,7 +13,7 @@ struct TrafficSignal: View {
     
     var body: some View {
         Circle()
-            .frame(width: 150, height: 150)
+            .frame(width: 100, height: 100)
             .foregroundColor(color)
             .overlay(Circle().stroke(Color.white, lineWidth: 4))
     }
