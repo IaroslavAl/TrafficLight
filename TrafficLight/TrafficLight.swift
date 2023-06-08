@@ -26,7 +26,7 @@ struct TrafficLight: View {
                 
                 Spacer()
                 
-                Button("NEXT") {
+                Button(currentSignal == .black ? "START" : "NEXT") {
                     change()
                 }
                 .font(.largeTitle).foregroundColor(.white).bold()
