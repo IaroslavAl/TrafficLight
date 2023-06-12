@@ -1,5 +1,5 @@
 //
-//  TrafficSignal.swift
+//  TrafficSignalView.swift
 //  TrafficLight
 //
 //  Created by Iaroslav Beldin on 08.06.2023.
@@ -7,20 +7,21 @@
 
 import SwiftUI
 
-struct TrafficSignal: View {
+struct TrafficSignalView: View {
     let color: Color
-    var opacity = 0.3
+    let opacity: Double
     
     var body: some View {
         Circle()
-            .frame(width: 100, height: 100)
+            .frame(width: 100)
             .foregroundColor(color)
+            .opacity(opacity)
             .overlay(Circle().stroke(Color.white, lineWidth: 4))
     }
 }
 
 struct TrafficSignal_Previews: PreviewProvider {
     static var previews: some View {
-        TrafficSignal(color: .red)
+        TrafficSignalView(color: .red, opacity: 1)
     }
 }
